@@ -9,7 +9,7 @@
 <body>
 <jsp:useBean id="Cb" class="beans.AuthentificationBean" scope="session"></jsp:useBean>
 <B>Bienvenue a votre session</B> <br>
-<%if(request.getParameter("name").equals(Cb)){ %>
+<%if(request.getParameter("name").equals("")){ %>
 <br>
 <b>le nom est : <%= Cb.getNom() %> </b> <br><br>
 <b>le prenom est : <%= Cb.getPrenom() %> </b><br>

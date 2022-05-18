@@ -19,6 +19,7 @@ import beans.controllerBean;
 @WebServlet("/AuthentificationServlet")
 public class AuthentificationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private static final Object Cb = null;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -52,6 +53,9 @@ public class AuthentificationServlet extends HttpServlet {
 			Cb.setNom(nom);
 			Cb.setPrenom(prenom);
 			session.setAttribute("Cb", Cb);
+		}
+		else {
+			
 		}
 		
 		
